@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f7b2b4; /* light pink background for whole page */
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #f06674; /* darker pink */
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.8rem;
+      margin: 0;
+      color: white;
+    }
+
+    main.content {
+      background-color: #f7b2b4; /* light pink section */
+      padding: 40px;
+      max-width: 900px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    /* Images grid container */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>❤︎ Portfolio ❤︎</h1>
+  </header>
+
+  <main class="content">
+    <p>Here are some of my favorite projects!</p>
+<div class="image-grid">
+  <img src="Images/DILUC.png" alt="DILUC" />
+  <img src="Images/ARATAKI_ITTO.png" alt="ARATAKI ITTO" />
+  <img src="Images/GANYU.png" alt="GANYU" />
+  <img src="Images/XIAO.png" alt="XIAO" />
+  <img src="Images/DEADLOCK.png" alt="DEADLOCK" />
+  <img src="Images/SAILOR_VIVI.png" alt="SAILOR VIVI" />
+  <img src="Images/DVA_DRAWING.png" alt="D.VA Drawing" />
+</div>
+
+  
